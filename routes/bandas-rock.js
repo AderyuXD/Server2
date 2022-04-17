@@ -1,11 +1,7 @@
-module.exports = function(app, config){
+// Importa em controller o objeto retornado pelo arquivo bandas-rock.js que está em controllers
+import controller from "../controllers/bandas-rock.js";
 
-    // Cria um objeto construtor que armazena os dados do arquivo /controllers/bandas-rock
-    const controllerFactory = require("../controllers/bandas-rock");
-    // Como controllerFactory é só o construtor, precisamos inicializa-lo em uma variável
-    // atribuímos a controller as funcionalidades do controllerFactory
-    const controller = controllerFactory();
-
+export default function(app, config){//Export default = module.exports
     // Criando uma rota que atende em api/v1/bandas quando um get é feito na página
     // Devolve a função showList vinda do controller
     app.route(config.get("server.path_root") + "bandas").get(controller.showList);

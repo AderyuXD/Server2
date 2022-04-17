@@ -1,4 +1,4 @@
-### Server
+### Server 2
 
 # Criando uma API RESTful com NodeJS e Express
 
@@ -58,7 +58,7 @@
     ~~~javascript
         "scripts":{
             "test":"echo \"Error: no test specified\" && exit 1",
-            "start": "nodemon server.js"
+            "dev": "nodemon server.js"
         },
     ~~~
 
