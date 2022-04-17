@@ -32,9 +32,19 @@
     },
     "BAN06": {
       "id": "BAN06",
-      "name": "Angra dos Reis",
+      "name": "DaLeste",
       "country": "Brazil",
-      "style": "Funk"
+      "style": "Funk Pesadao"
+    }
+  },
+  "filmes": {
+    "FIL01": {
+      "id": "FIL01",
+      "name": "Moana"
+    },
+    "FIL02": {
+      "id": "FIL02",
+      "name": "The Avengers"
     }
   }
 }
